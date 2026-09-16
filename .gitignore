@@ -1,4 +1,4 @@
-# Python enviroment and runtime files
+# Python environment and runtime files
 .venv/
 
 __pycache__/

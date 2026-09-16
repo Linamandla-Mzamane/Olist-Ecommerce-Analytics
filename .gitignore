@@ -32,3 +32,6 @@ data/raw/*
 # AI agent files
 .claude/
 CLAUDE.md
+
+# Briefs 
+*.pdf

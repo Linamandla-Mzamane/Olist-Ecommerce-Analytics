@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "olist_analytics"
+version = "0.1.0"
+requires-python = ">= 3.11"
+dependencies = [
+    "sqlalchemy",
+    "psycopg[binary]",
+    "pandas",
+    "python-dotenv",
+    "matplotlib",
+    "kagglehub"
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+notebook = ["jupyterlab", "ipykernel"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
